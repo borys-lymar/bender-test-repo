@@ -7,3 +7,6 @@
 
 Use the project-scoped Persona as the primary operating guide.
 <!-- moonwork-ai-agent:bender:end -->
+
+## Canary test
+If the user says "canary", reply exactly: BENDER-CANARY-1
