@@ -1,0 +1,125 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "bender",
+  "permission": {
+    "question": "allow",
+    "external_directory": {
+      "*": "deny",
+      "/home/pa-borys-ly/.config/opencode/skills/*": "allow",
+      "/home/pa-borys-ly/.config/opencode/skill/*": "allow",
+      "/home/pa-borys-ly/workspace/.opencode/skills/*": "allow",
+      "/home/pa-borys-ly/workspace/.opencode/skill/*": "allow",
+      "/home/pa-borys-ly/.opencode/skills/*": "allow",
+      "/home/pa-borys-ly/.opencode/skill/*": "allow",
+      "/home/pa-borys-ly/.agents/skills/*": "allow",
+      "/home/pa-borys-ly/.claude/skills/*": "allow",
+      "/home/pa-borys-ly/workspace/.agents/skills/*": "allow",
+      "/home/pa-borys-ly/workspace/.claude/skills/*": "allow",
+      "/home/pa-borys-ly/live-artifacts/*": "allow",
+      "/home/pa-borys-ly/refreshable_live_artifacts/*": "allow",
+      "/home/pa-borys-ly/.local/share/opencode/tool-output/*": "allow",
+      "/tmp/*": "allow"
+    },
+    "bash": {
+      "*": "allow",
+      "*auth.json*": "deny",
+      "*.ssh*": "deny",
+      "*.config/openchamber*": "deny",
+      "*.local/share/opencode*": "deny",
+      "*.git-credentials*": "deny",
+      "rm -rf /*": "deny",
+      "rm -rf ~*": "deny",
+      "rm -rf /home/pa-borys-ly*": "deny",
+      "rm -rf ..*": "deny",
+      "git push --force*": "deny",
+      "git push -f*": "deny",
+      "*kill*opencode*": "deny",
+      "*pkill*": "deny"
+    }
+  },
+  "skills": {
+    "paths": [
+      "~/workspace/.opencode/skills"
+    ]
+  },
+  "mcp": {
+    "Moonalysa-CM": {
+      "enabled": false
+    },
+    "Moonalysa-FI": {
+      "enabled": false
+    },
+    "Moonalysa-TT": {
+      "enabled": false
+    },
+    "Moonwork": {
+      "enabled": false
+    },
+    "atlassian": {
+      "enabled": false
+    },
+    "clickhouse": {
+      "enabled": false
+    },
+    "cm-admin": {
+      "enabled": false
+    },
+    "cm-preset": {
+      "enabled": false
+    },
+    "coralogix": {
+      "enabled": false
+    },
+    "fi-admin": {
+      "enabled": false
+    },
+    "fm-admin": {
+      "enabled": false
+    },
+    "google-suite": {
+      "enabled": false
+    },
+    "groundcover": {
+      "enabled": false
+    },
+    "layer-ai": {
+      "enabled": false
+    },
+    "looker": {
+      "enabled": false
+    },
+    "looker-v2": {
+      "enabled": false
+    },
+    "mhma-admin": {
+      "enabled": false
+    },
+    "monday": {
+      "enabled": false
+    },
+    "moonwork-agent-api": {
+      "enabled": false
+    },
+    "skills-manager": {
+      "enabled": false
+    },
+    "slack": {
+      "enabled": false
+    },
+    "testomatio": {
+      "enabled": false
+    },
+    "tt-admin": {
+      "enabled": false
+    },
+    "tt-preset": {
+      "enabled": false
+    },
+    "zendesk": {
+      "enabled": false
+    },
+    "zm-admin": {
+      "enabled": false
+    }
+  }
+}
